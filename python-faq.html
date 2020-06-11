@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Antoine Dauptain" />
+
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary">
+
+<meta name="keywords" content="python3, devops, Python3, " />
+
+<meta property="og:title" content="Python FAQ "/>
+<meta property="og:url" content="http://localhost:8000/python-faq" />
+<meta property="og:description" content="Python Frequently Asked Questions" />
+<meta property="og:site_name" content="The COOP Blog" />
+<meta property="og:article:author" content="Antoine Dauptain" />
+<meta property="og:article:published_time" content="2020-05-13T00:00:00+02:00" />
+<meta name="twitter:title" content="Python FAQ ">
+<meta name="twitter:description" content="Python Frequently Asked Questions">
+
+        <title>Python FAQ  · The COOP Blog
+</title>
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="http://localhost:8000/theme/css/elegant.prod.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="http://localhost:8000/theme/css/custom.css" media="screen">
+
+        <link rel="shortcut icon" href="http://localhost:8000/theme/images/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="http://localhost:8000/theme/images/apple-touch-icon-152x152.png" type="image/png" />
+        <link rel="apple-touch-icon" href="http://localhost:8000/theme/images/apple-touch-icon.png"  type="image/png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="http://localhost:8000/theme/images/apple-touch-icon-57x57.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="http://localhost:8000/theme/images/apple-touch-icon-72x72.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="http://localhost:8000/theme/images/apple-touch-icon-76x76.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="http://localhost:8000/theme/images/apple-touch-icon-114x114.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="http://localhost:8000/theme/images/apple-touch-icon-120x120.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="http://localhost:8000/theme/images/apple-touch-icon-144x144.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="http://localhost:8000/theme/images/apple-touch-icon-152x152.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="http://localhost:8000/theme/images/apple-touch-icon-180x180.png" type="image/png" />
+
+
+    </head>
+    <body>
+        <div id="content">
+            <div class="navbar navbar-static-top">
+                <div class="navbar-inner">
+                    <div class="container-fluid">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="brand" href="http://localhost:8000/"><span class=site-name>The COOP Blog</span></a>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav pull-right top-menu">
+                                <li >
+                                    <a href=
+                                       http://localhost:8000
+                                    >Home</a>
+                                </li>
+                                <li ><a href="http://localhost:8000/about">About</a></li>
+                                <li ><a href="http://localhost:8000/categories">Categories</a></li>
+                                <li ><a href="http://localhost:8000/tags">Tags</a></li>
+                                <li ><a href="http://localhost:8000/archives">Archives</a></li>
+                                <li><form class="navbar-search" action="http://localhost:8000/search" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span1"></div>
+                    <div class="span10">
+<article itemscope>
+<div class="row-fluid">
+    <header class="page-header span10 offset2">
+        <h1>
+            <a href="http://localhost:8000/python-faq">
+                Python <span class="caps">FAQ</span>
+            </a>
+        </h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+        <div class="span8 offset2 article-content">
+            
+            <p>Ok I have a python3 environment, but I am&nbsp;lost!</p>
+<h3 id="i-am-stuck-who-can-help-me">I am stuck, who can help me?<a class="headerlink" href="#i-am-stuck-who-can-help-me" title="Permanent link"> </a></h3>
+<p>Just <strong>google the question</strong>!.
+As the community is extremely active, most of the problems are already&nbsp;documented.</p>
+<ul>
+<li><a href="https://docs.python.org">https://docs.python.org</a> : the official&nbsp;website</li>
+<li><a href="https://stackoverflow.com/">stackoverflow</a> : where most of real-life problems are already&nbsp;solved</li>
+<li><a href="https://www.fullstackpython.com">fullstackpython</a> : a hub for many other python&nbsp;ressources.</li>
+</ul>
+<h3 id="how-do-i-solve-an-error">How do I solve an error?<a class="headerlink" href="#how-do-i-solve-an-error" title="Permanent link"> </a></h3>
+<p>A python error comes with a <em>traceback</em>, i.e. the list of calls that ended to an error. Read the <em>traceback</em> from the bottom.
+Using this&nbsp;example:</p>
+<div class="highlight"><pre><span></span><code><span class="n">Traceback</span><span class="p">:</span>
+<span class="n">tests</span><span class="o">/</span><span class="n">test_guiform</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">5</span><span class="p">:</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+    <span class="kn">from</span> <span class="nn">opentea.gui_forms.otinker</span> <span class="kn">import</span> <span class="n">main_otinker</span>
+<span class="n">src</span><span class="o">/</span><span class="n">opentea</span><span class="o">/</span><span class="n">gui_forms</span><span class="o">/</span><span class="n">otinker</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">7</span><span class="p">:</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+    <span class="kn">from</span> <span class="nn">opentea.gui_forms.root_widget</span> <span class="kn">import</span> <span class="n">OTRoot</span>
+<span class="n">src</span><span class="o">/</span><span class="n">opentea</span><span class="o">/</span><span class="n">gui_forms</span><span class="o">/</span><span class="n">root_widget</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">70</span><span class="p">:</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+    <span class="kn">from</span> <span class="nn">tiny_3d_engine</span> <span class="kn">import</span> <span class="p">(</span><span class="n">Engine3D</span><span class="p">,</span> <span class="n">load_file_as_scene</span><span class="p">)</span>
+<span class="n">E</span>   <span class="ne">ImportError</span><span class="p">:</span> <span class="n">cannot</span> <span class="kn">import</span> <span class="nn">name</span> <span class="s1">&#39;load_file_as_scene&#39;</span> <span class="kn">from</span> <span class="s1">&#39;tiny_3d_engine&#39;</span> <span class="p">(</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="o">.</span><span class="mi">7</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">tiny_3d_engine</span><span class="o">-</span><span class="mf">0.1</span><span class="o">.</span><span class="mi">0</span><span class="o">-</span><span class="n">py3</span><span class="o">.</span><span class="mf">7.</span><span class="n">egg</span><span class="o">/</span><span class="n">tiny_3d_engine</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">)</span>
+</code></pre></div>
+
+
+<p>This is an <strong>Importation error</strong> (<code>ImportError</code>). The function <strong>load_file_as_scene</strong> was not found in the package <strong>tiny_3d_engine-0.1.0</strong>.
+The caller program <strong>opentea/gui_forms/root_widget.py</strong> isasking for something which does not exists in this&nbsp;distribution. </p>
+<p><em>Nota: This illustrates a dependency error. Opentea should have forced a version requirement (tiny_3d_engine&gt;=0) before relying on a new&nbsp;feature.</em></p>
+<p>If you ask for help or report a bug, make sure you keep the traceback with&nbsp;you.</p>
+<h3 id="how-to-manage-my-python-environment">How to manage my python environment?<a class="headerlink" href="#how-to-manage-my-python-environment" title="Permanent link"> </a></h3>
+<p>We encourage the use of <code>pip</code>. See the <a href="https://docs.python.org/3.6/installing/index.html">official documentation</a>.</p>
+<h3 id="how-can-i-know-what-is-in-my-python-environment">How can I know what is in my python environment?<a class="headerlink" href="#how-can-i-know-what-is-in-my-python-environment" title="Permanent link"> </a></h3>
+<p>Use <code>pip list</code>.</p>
+<p>The output will look&nbsp;like:</p>
+<div class="highlight"><pre><span></span><code>tiny-3d-engine                <span class="m">0</span>.1.0      /Users/dauptain/GITLAB/tiny_3d_engine/src     
+tqdm                          <span class="m">4</span>.45.0     
+Tree                          <span class="m">0</span>.2.4      
+twine                         <span class="m">3</span>.1.1      
+typed-ast                     <span class="m">1</span>.4.1      
+</code></pre></div>
+
+
+<p>You see in this list, three columns. In the first, the name of the packages installed. In the second, the&nbsp;version.</p>
+<p>If a path is present in the third column (here <code>tiny-3d-engine</code>), the package is run from specific sources in your computer. . If the column is void, this package is installed in the <code>site_packages</code>forlder of your python&nbsp;environment.</p>
+<h3 id="what-is-an-installation-in-develop-mode-vs-install-mode">What is an installation in &#8220;Develop&#8221; mode, vs &#8220;Install&#8221; mode.?<a class="headerlink" href="#what-is-an-installation-in-develop-mode-vs-install-mode" title="Permanent link"> </a></h3>
+<p>The &#8220;install&#8221; mode is the most common situation. <strong>It is in very short a &#8220;read only mode&#8221;</strong>. You installed the package either via <code>pip install</code> from the <a href="https://pypi.org">Python Package Index</a>, or via <code>python setup.py install</code> from the&nbsp;sources.</p>
+<p>In &#8220;develop&#8221; mode, you are running a package from the sources. <strong>It is in very short a &#8220;read <span class="caps">AND</span> <span class="caps">WRITE</span> mode&#8221;</strong> This is useful if you are developing this package (editing the&nbsp;sources).</p>
+<p>You can read the answer to this <a href="https://stackoverflow.com/questions/19048732/python-setup-py-develop-vs-install">develop vs install</a> question on&nbsp;stackoverflow.</p>
+
+
+             
+ 
+                <p id="post-share-links">
+    Like this post? Share on:
+    <a href="https://twitter.com/intent/tweet?text=Python%20FAQ&url=http%3A//localhost%3A8000/python-faq&hashtags=python3,devops" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
+    ❄
+    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//localhost%3A8000/python-faq" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
+    ❄
+    <a href="mailto:?subject=Python%20FAQ&amp;body=http%3A//localhost%3A8000/python-faq" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
+    </p>
+
+            
+            
+
+
+
+
+
+
+            <hr/>
+<section>
+    <h2>Keep Reading</h2>
+<ul class="related-posts-list">
+<li><a href="http://localhost:8000/create-your-own-package" title="Packaging guide">Packaging guide</a></li>
+<li><a href="http://localhost:8000/pip-install" title="pip installing packages">pip installing packages</a></li>
+<li><a href="http://localhost:8000/pypi" title="Uploading to PyPI">Uploading to PyPI</a></li>
+<li><a href="http://localhost:8000/python-virtual-envs" title="Python virtual environments">Python virtual environments</a></li>
+</ul>
+<hr />
+</section>
+            <aside>
+            <nav>
+            <ul class="articles-timeline">
+                <li class="previous-article">« <a href="http://localhost:8000/notebooks" title="Previous: Notebooks">Notebooks</a></li>
+                <li class="next-article"><a href="http://localhost:8000/avbp-on-mac" title="Next: Setting up AVBP on your MAC">Setting up AVBP on your MAC</a> »</li>
+            </ul>
+            </nav>
+            </aside>
+        </div>
+        <section id="article-sidebar" class="span2">
+            <h4>Published</h4>
+            <time itemprop="dateCreated" datetime="2020-05-13T00:00:00+02:00">mai 13, 2020</time>
+            <h4>Category</h4>
+            <a class="category-link" href="http://localhost:8000/categories#python3-ref">Python3</a>
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article">
+                <li><a href="http://localhost:8000/tags#devops-ref">devops
+                    <span>5</span>
+</a></li>
+                <li><a href="http://localhost:8000/tags#python3-ref">python3
+                    <span>5</span>
+</a></li>
+            </ul>
+<h4>Stay in Touch</h4>
+<div id="sidebar-social-link">
+    <a href="gitlab.com/cerfacs" title="" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="GitLab" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#30353e"/><path fill="#e24329" d="M84 215l43-133c2-7 12-7 14 0l115 353L371 82c2-7 12-7 14 0l43 133"/><path fill="#fc6d26" d="M256 435L84 215h100.4zm71.7-220H428L256 435l71.6-220z"/><path fill="#fca326" d="M84 215l-22 67c-2 6 0 13 6 16l188 137zm344 0l22 67c2 6 0 13-6 16L256 435z"/></svg>
+    </a>
+</div>
+            
+
+
+
+
+
+            
+
+
+
+
+
+        </section>
+</div>
+</article>
+                    </div>
+                    <div class="span1"></div>
+                </div>
+            </div>
+        </div>
+<footer>
+
+
+
+
+    <div id="fpowered">
+        Powered by: <a href="http://getpelican.com/" title="Pelican Home Page" target="_blank" rel="nofollow noopener noreferrer">Pelican</a>
+        Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page" target="_blank" rel="nofollow noopener noreferrer">Elegant</a>
+    </div>
+</footer>            <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+
+    <script>
+    (function () {
+        if (window.location.hash.match(/^#comment-\d+$/)) {
+            $('#comment_thread').collapse('show');
+        }
+    })();
+    window.onhashchange=function(){
+        if (window.location.hash.match(/^#comment-\d+$/))
+            window.location.reload(true);
+    }
+    $('#comment_thread').on('shown', function () {
+        var link = document.getElementById('comment-accordion-toggle');
+        var old_innerHTML = link.innerHTML;
+        $(link).fadeOut(200, function() {
+            $(this).text('Click here to hide comments').fadeIn(200);
+        });
+        $('#comment_thread').on('hidden', function () {
+            $(link).fadeOut(200, function() {
+                $(this).text(old_innerHTML).fadeIn(200);
+            });
+        })
+    })
+</script>
+
+    </body>
+    <!-- Theme: Elegant built for Pelican
+        License : MIT -->
+</html>

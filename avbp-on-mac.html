@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Gabriel Staffelbach" />
+
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary">
+
+<meta name="keywords" content="environment, avbp, Tutorials, " />
+
+<meta property="og:title" content="Setting up AVBP on your MAC "/>
+<meta property="og:url" content="http://localhost:8000/avbp-on-mac" />
+<meta property="og:description" content="Tips and trick to get AVBP up and running on your Mac" />
+<meta property="og:site_name" content="The COOP Blog" />
+<meta property="og:article:author" content="Gabriel Staffelbach" />
+<meta property="og:article:published_time" content="2020-05-27T00:00:00+02:00" />
+<meta name="twitter:title" content="Setting up AVBP on your MAC ">
+<meta name="twitter:description" content="Tips and trick to get AVBP up and running on your Mac">
+
+        <title>Setting up AVBP on your MAC  · The COOP Blog
+</title>
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="http://localhost:8000/theme/css/elegant.prod.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="http://localhost:8000/theme/css/custom.css" media="screen">
+
+        <link rel="shortcut icon" href="http://localhost:8000/theme/images/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="http://localhost:8000/theme/images/apple-touch-icon-152x152.png" type="image/png" />
+        <link rel="apple-touch-icon" href="http://localhost:8000/theme/images/apple-touch-icon.png"  type="image/png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="http://localhost:8000/theme/images/apple-touch-icon-57x57.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="http://localhost:8000/theme/images/apple-touch-icon-72x72.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="http://localhost:8000/theme/images/apple-touch-icon-76x76.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="http://localhost:8000/theme/images/apple-touch-icon-114x114.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="http://localhost:8000/theme/images/apple-touch-icon-120x120.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="http://localhost:8000/theme/images/apple-touch-icon-144x144.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="http://localhost:8000/theme/images/apple-touch-icon-152x152.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="http://localhost:8000/theme/images/apple-touch-icon-180x180.png" type="image/png" />
+
+
+    </head>
+    <body>
+        <div id="content">
+            <div class="navbar navbar-static-top">
+                <div class="navbar-inner">
+                    <div class="container-fluid">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="brand" href="http://localhost:8000/"><span class=site-name>The COOP Blog</span></a>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav pull-right top-menu">
+                                <li >
+                                    <a href=
+                                       http://localhost:8000
+                                    >Home</a>
+                                </li>
+                                <li ><a href="http://localhost:8000/about">About</a></li>
+                                <li ><a href="http://localhost:8000/categories">Categories</a></li>
+                                <li ><a href="http://localhost:8000/tags">Tags</a></li>
+                                <li ><a href="http://localhost:8000/archives">Archives</a></li>
+                                <li><form class="navbar-search" action="http://localhost:8000/search" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span1"></div>
+                    <div class="span10">
+<article itemscope>
+<div class="row-fluid">
+    <header class="page-header span10 offset2">
+        <h1>
+            <a href="http://localhost:8000/avbp-on-mac">
+                 Setting up <span class="caps">AVBP</span> on your <span class="caps">MAC</span>
+            </a>
+        </h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+        <div class="span8 offset2 article-content">
+            
+            <div id="pec-encrypted-content" style="display:none">EgbaAAjjCz3k3gNCDGHxZg==;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;^</div>
+<div id="pec-decrypted-content">
+    <h4><i></i></h4>
+</div>
+
+<form id="pec-decrypt-form">
+    <label for="pec-content-password">Password</label>
+    <input type="password" id="pec-content-password" placeholder="Password" />
+    <button type="button" id="pec-decrypt-content">Decrypt</button>
+</form>
+
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/core.js"></script>
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-base64.js"></script>
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/cipher-core.js"></script>
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/pad-nopadding.js"></script>
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/md5.js"></script>
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/aes.js"></script>
+
+
+<script type="text/javascript">
+    (function () {
+        var strip_padding = function (padded_content, padding_char) {
+            /*
+             * Strips the padding character from decrypted content.
+             */
+            for (var i = padded_content.length; i > 0; i--) {
+                if (padded_content[i-1] !== padding_char) {
+                    return padded_content.slice(0, i);
+                }
+            }
+        };
+
+        var decrypt_content = function (password, iv_b64, ciphertext_b64, padding_char) {
+            /*
+             * Decrypts the content from the ciphertext bundle.
+             */
+            var key = CryptoJS.MD5(password),
+                iv = CryptoJS.enc.Base64.parse(iv_b64),
+                ciphertext = CryptoJS.enc.Base64.parse(ciphertext_b64),
+                bundle = {
+                    key: key,
+                    iv: iv,
+                    ciphertext: ciphertext
+                };
+
+            var plaintext = CryptoJS.AES.decrypt(bundle, key, {iv: iv, padding: CryptoJS.pad.NoPadding});
+
+            try {
+                return strip_padding(plaintext.toString(CryptoJS.enc.Utf8), padding_char);
+            }
+            catch (err) {
+                // encoding failed; wrong password
+                return false;
+            }
+        };
+
+        var init_decryptor = function() {
+            var decrypt_btn = document.getElementById('pec-decrypt-content'),
+                password_input = document.getElementById('pec-content-password'),
+                encrypted_content = document.getElementById('pec-encrypted-content'),
+                decrypted_content = document.getElementById('pec-decrypted-content'),
+                decrypt_form = document.getElementById('pec-decrypt-form');
+
+            decrypt_btn.addEventListener('click', function () {
+                // grab the ciphertext bundle
+                var parts = encrypted_content.innerHTML.split(';');
+
+                // decrypt it
+                var content = decrypt_content(
+                    password_input.value,
+                    parts[0],
+                    parts[1],
+                    parts[2]
+                );
+
+                if (content) {
+                    // success; display the decrypted content
+                    decrypted_content.innerHTML = content;
+                    decrypt_form.parentNode.removeChild(decrypt_form);
+                    encrypted_content.parentNode.removeChild(encrypted_content);
+
+                    // any post processing on the decrypted content should be done here
+                }
+                else {
+                    // ¯\_(ツ)_/¯
+                    password_input.value = '';
+                }
+            });
+        };
+
+        document.addEventListener('DOMContentLoaded', init_decryptor);
+    })();
+</script>
+
+
+             
+ 
+                <p id="post-share-links">
+    Like this post? Share on:
+    <a href="https://twitter.com/intent/tweet?text=Setting%20up%20AVBP%20on%20your%20MAC&url=http%3A//localhost%3A8000/avbp-on-mac&hashtags=environment,avbp" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
+    ❄
+    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//localhost%3A8000/avbp-on-mac" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
+    ❄
+    <a href="mailto:?subject=Setting%20up%20AVBP%20on%20your%20MAC&amp;body=http%3A//localhost%3A8000/avbp-on-mac" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
+    </p>
+
+            
+            
+
+
+
+
+
+
+            <hr/>
+            <aside>
+            <nav>
+            <ul class="articles-timeline">
+                <li class="previous-article">« <a href="http://localhost:8000/python-faq" title="Previous: Python FAQ">Python FAQ</a></li>
+            </ul>
+            </nav>
+            </aside>
+        </div>
+        <section id="article-sidebar" class="span2">
+            <h4>Published</h4>
+            <time itemprop="dateCreated" datetime="2020-05-27T00:00:00+02:00">mai 27, 2020</time>
+            <h4>Category</h4>
+            <a class="category-link" href="http://localhost:8000/categories#tutorials-ref">Tutorials</a>
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article">
+                <li><a href="http://localhost:8000/tags#avbp-ref">avbp
+                    <span>1</span>
+</a></li>
+                <li><a href="http://localhost:8000/tags#environment-ref">environment
+                    <span>1</span>
+</a></li>
+            </ul>
+<h4>Stay in Touch</h4>
+<div id="sidebar-social-link">
+    <a href="gitlab.com/cerfacs" title="" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="GitLab" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#30353e"/><path fill="#e24329" d="M84 215l43-133c2-7 12-7 14 0l115 353L371 82c2-7 12-7 14 0l43 133"/><path fill="#fc6d26" d="M256 435L84 215h100.4zm71.7-220H428L256 435l71.6-220z"/><path fill="#fca326" d="M84 215l-22 67c-2 6 0 13 6 16l188 137zm344 0l22 67c2 6 0 13-6 16L256 435z"/></svg>
+    </a>
+</div>
+            
+
+
+
+
+
+            
+
+
+
+
+
+        </section>
+</div>
+</article>
+                    </div>
+                    <div class="span1"></div>
+                </div>
+            </div>
+        </div>
+<footer>
+
+
+
+
+    <div id="fpowered">
+        Powered by: <a href="http://getpelican.com/" title="Pelican Home Page" target="_blank" rel="nofollow noopener noreferrer">Pelican</a>
+        Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page" target="_blank" rel="nofollow noopener noreferrer">Elegant</a>
+    </div>
+</footer>            <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+
+    <script>
+    (function () {
+        if (window.location.hash.match(/^#comment-\d+$/)) {
+            $('#comment_thread').collapse('show');
+        }
+    })();
+    window.onhashchange=function(){
+        if (window.location.hash.match(/^#comment-\d+$/))
+            window.location.reload(true);
+    }
+    $('#comment_thread').on('shown', function () {
+        var link = document.getElementById('comment-accordion-toggle');
+        var old_innerHTML = link.innerHTML;
+        $(link).fadeOut(200, function() {
+            $(this).text('Click here to hide comments').fadeIn(200);
+        });
+        $('#comment_thread').on('hidden', function () {
+            $(link).fadeOut(200, function() {
+                $(this).text(old_innerHTML).fadeIn(200);
+            });
+        })
+    })
+</script>
+
+    </body>
+    <!-- Theme: Elegant built for Pelican
+        License : MIT -->
+</html>
